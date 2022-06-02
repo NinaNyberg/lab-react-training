@@ -35,7 +35,7 @@ const DriverCard = (props) => {
       <img
         src={props.img}
         alt="driver-pic"
-        style={{ width: '8%', borderRadius: '60%' }}
+        style={{ width: '64px', borderRadius: '60%' }}
       />
       {props.name} <br />
       {points} <br />

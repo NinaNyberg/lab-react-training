@@ -11,3 +11,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.IdCard {
+  display: flex;
+  border: 1px solid black;
+  margin: 1em;
+  padding: 0.25em;
+  gap: 0.5em;
+}
+
+.IdCard ul {
+  list-style: none;
+}
+
+.Greetings {
+  border: 1px solid black;
+  margin: 1em;
+  padding: 0.25em;
+}
+
+.DriverCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.DriverCard img {
+  width: 4em;
+  height: 4em;
+  border-radius: 2em;
+}

@@ -31,12 +31,17 @@ const CreditCard = (props) => {
     return hideNum.join('');
   };
 
+  const formattedExpMonth =
+    props.expirationMonth < 10
+      ? `0${props.expirationMonth}`
+      : `${props.expirationMonth}`;
+
   return (
     <div className="CreditCard" style={divStyle}>
       <img src={logo} alt="logo" style={{ width: '5%' }} /> <br />
       {cardHide(number)} <br />
       <span style={{ marginRight: '1em' }}>
-        Expires: {props.expirationMonth}/{props.expirationYear}
+        Expires: {formattedExpMonth}/{props.expirationYear - 2000}
       </span>
       {props.bank} <br />
       {props.owner}

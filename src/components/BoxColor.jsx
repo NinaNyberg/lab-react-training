@@ -13,10 +13,15 @@ const BoxColor = ({ r, g, b }) => {
 
     return '#' + red + green + blue;
   };
+  const backgrLight = r + g + b > (255 * 3) / 2;
+
   return (
     <div
       className="BoxColor"
-      style={{ backgroundColor: `rgb(${r}, ${g}, ${b})` }}
+      style={{
+        backgroundColor: `rgb(${r}, ${g}, ${b})`,
+        color: backgrLight ? 'black' : 'white',
+      }}
     >
       rgb({colorConcat})<br />
       {ConvertRGBtoHex(r, g, b)}
